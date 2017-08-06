@@ -1,0 +1,21 @@
+main: com.brokenmatrix.coacoamagic.CoacoaMagic
+name: CoacoaMagic
+version: 1.0.0
+author: zantanj
+description: Acts like a big magic mod like ars magica or thaumcraft, but in a Spigot plugin instead of MCP or Forge. Using with slimefun adds a few new things but is not required.
+
+depend: [ModCore, MultiblockCore]
+softdepend: [Slimefun]
+
+commands:
+  coacoamagic:
+    description: The basic Coacoa Magic command.
+    aliases: cm
+    useage: /cm <arguments>
+permissions:
+  coacoamagic.cheat.knowledge:
+    description: Allows you to do /cm knowledge <give,take> <item,all>
+    defualt: op
+  coacoamagic.cheat.mana:
+    description: Allows you to do /cm mana <set,give,take> <mana>
+    defualt: op
