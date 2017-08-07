@@ -1,4 +1,4 @@
-main: com.brokenmatrix.coacoamagic.CoacoaMagic
+main: net.voidrealms.coacoamagic.CoacoaMagic
 name: CoacoaMagic
 version: 1.0.0
 authors: [zantanj, VoidAngel]
