@@ -48,13 +48,13 @@ public class ThomasMagic
 		natureOrb = new CustomItem(ChatColor.GREEN + "Nature Orb", Material.SLIME_BALL, 16, ChatColor.WHITE + "Essense of relaxation");
 		fireOrb = new CustomItem(ChatColor.RED + "Fire Orb", Material.MAGMA_CREAM, 16, ChatColor.WHITE + "Essense of suffering");
 		waterOrb = new CustomItem(ChatColor.BLUE + "Water Orb", Material.ENDER_PEARL, 16, ChatColor.WHITE + "Essense of wisdom");
-		afflictionOrb = new CustomItem(ChatColor.DARK_GRAY +  "Affliction Orb", Material.FIREWORK_CHARGE, 16, ChatColor.WHITE + "Essense of...");
+		afflictionOrb = new CustomItem(ChatColor.DARK_GRAY +  "Affliction Orb", Material.FIREWORK_CHARGE, 16, ChatColor.WHITE + "Essense of despair");
 		desolateOrb = new CustomItem(ChatColor.YELLOW + "Desolate Orb", Material.DOUBLE_PLANT, 16, ChatColor.WHITE + "Essense of fatigue");
 		earthOrb = new CustomItem(ChatColor.GOLD + "Earth Orb", Material.CLAY_BALL, 16, ChatColor.WHITE + "Essense of dedication");
 		prosperityOrb = new CustomItem(ChatColor.LIGHT_PURPLE + "Prosperity Orb", Material.CHORUS_FRUIT_POPPED, 16, ChatColor.WHITE + "Essense of beauty");
 		iceOrb = new CustomItem(ChatColor.AQUA + "Ice Orb", Material.SNOW_BALL, 16, ChatColor.WHITE + "Essense of survival");
 		enderOrb = new CustomItem(ChatColor.DARK_PURPLE + "Ender Orb", Material.EYE_OF_ENDER, 16, ChatColor.WHITE + "Essense of curiosity");
-		crushedOrb = new CustomColorableItem("Crushed Orb", Material.INK_SACK, (byte) 15, 16, ChatColor.WHITE + "Essense of frustration");
+		crushedOrb = new CustomColorableItem(ChatColor.WHITE + "Crushed Orb", Material.INK_SACK, (byte) 15, 16, ChatColor.WHITE + "Essense of frustration");
 		vexedOrb = new CustomColorableItem(ChatColor.DARK_RED + "Vexed Orb", Material.INK_SACK, (byte) 1, 16, ChatColor.WHITE + "Essense of anger");
 		
 		//Testing

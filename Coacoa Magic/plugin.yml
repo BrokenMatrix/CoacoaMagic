@@ -1,6 +1,6 @@
 main: net.voidrealms.coacoamagic.CoacoaMagic
 name: CoacoaMagic
-version: 1.0.0
+version: 0.0.11
 authors: [zantanj, VoidAngel]
 description: Acts like a big magic mod like ars magica or thaumcraft, but in a Spigot plugin instead of MCP or Forge. Using with slimefun adds a few new things but is not required.
 
