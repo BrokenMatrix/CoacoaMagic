@@ -84,7 +84,7 @@ public class ThomasMagic
 		CustomItems.Register(pureJessBlockItem);
 		
 		//Drops
-		CustomDrops.Register(EntityType.ZOMBIE, new CustomItemChanceDrop(vexedOrb, 0.1f));
+		CustomDrops.Register(EntityType.ZOMBIE, new CustomItemChanceDrop(vexedOrb, 0.5f));
 	}
 	
 	public void disable()
