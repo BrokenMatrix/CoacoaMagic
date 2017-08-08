@@ -17,9 +17,9 @@ public class ThomasMagic
 	
 	public ThomasMagic()
 	{
-		pureJessBlock = new CustomColorableBlock("Pure Jess Block", Material.HARD_CLAY, DyeColor.PURPLE);
+		pureJessBlock = new CustomColorableBlock("Pure Jess Block", Material.CONCRETE, (byte) 10);
 		
-		pureJessBlockItem = new CustomColorableBlockItem(ChatColor.DARK_PURPLE + "Pure Jess Block", Material.HARD_CLAY, DyeColor.PURPLE, pureJessBlock, true, new String[]{"This block is made from the finest of jess hairs."});
+		pureJessBlockItem = new CustomColorableBlockItem(ChatColor.DARK_PURPLE + "Pure Jess Block", Material.CONCRETE, (byte) 10, pureJessBlock, true, new String[]{"This block is made from the finest of jess hairs."});
 		
 		CustomBlocks.Register(pureJessBlock);
 		
