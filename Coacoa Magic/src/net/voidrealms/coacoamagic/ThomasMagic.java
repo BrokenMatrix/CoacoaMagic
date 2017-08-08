@@ -2,6 +2,7 @@ package net.voidrealms.coacoamagic;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
+import org.bukkit.entity.EntityType;
 
 import com.brokenmatrix.modcore.blocks.CustomBlocks;
 import com.brokenmatrix.modcore.blocks.CustomColorableBlock;
@@ -9,6 +10,9 @@ import com.brokenmatrix.modcore.items.CustomColorableBlockItem;
 import com.brokenmatrix.modcore.items.CustomColorableItem;
 import com.brokenmatrix.modcore.items.CustomItem;
 import com.brokenmatrix.modcore.items.CustomItems;
+import com.brokenmatrix.modcore.items.drops.CustomDrops;
+
+import net.voidrealms.coacoamagic.items.drops.CustomItemChanceDrop;
 
 public class ThomasMagic
 {
@@ -60,6 +64,8 @@ public class ThomasMagic
 		//Testing
 		pureJessBlockItem = new CustomColorableBlockItem(ChatColor.DARK_PURPLE + "Pure Jess Block", Material.CONCRETE, (byte) 10, pureJessBlock, true, new String[]{"This block is made from the finest of jess hairs."});
 		
+		//Registry
+		
 		//Blocks
 		CustomBlocks.Register(pureJessBlock);
 		
@@ -76,6 +82,9 @@ public class ThomasMagic
 		CustomItems.Register(crushedOrb);
 		CustomItems.Register(vexedOrb);
 		CustomItems.Register(pureJessBlockItem);
+		
+		//Drops
+		CustomDrops.Register(EntityType.ZOMBIE, new CustomItemChanceDrop(vexedOrb, 0.1f));
 	}
 	
 	public void disable()
