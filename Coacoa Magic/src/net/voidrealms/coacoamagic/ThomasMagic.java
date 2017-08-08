@@ -1,23 +1,25 @@
 package net.voidrealms.coacoamagic;
 
+import org.bukkit.ChatColor;
+import org.bukkit.DyeColor;
 import org.bukkit.Material;
 
-import com.brokenmatrix.modcore.blocks.CustomBlock;
 import com.brokenmatrix.modcore.blocks.CustomBlocks;
-import com.brokenmatrix.modcore.items.CustomBlockItem;
+import com.brokenmatrix.modcore.blocks.CustomColorableBlock;
+import com.brokenmatrix.modcore.items.CustomColorableBlockItem;
 import com.brokenmatrix.modcore.items.CustomItems;
 
 public class ThomasMagic
 {
-	public CustomBlock pureJessBlock;
+	public CustomColorableBlock pureJessBlock;
 	
-	public CustomBlockItem pureJessBlockItem;
+	public CustomColorableBlockItem pureJessBlockItem;
 	
 	public ThomasMagic()
 	{
-		pureJessBlock = new CustomBlock("Pure Jess Block", Material.HARD_CLAY);
+		pureJessBlock = new CustomColorableBlock("Pure Jess Block", Material.HARD_CLAY, DyeColor.PURPLE);
 		
-		pureJessBlockItem = new CustomBlockItem("&5Pure Jess Block", Material.HARD_CLAY, pureJessBlock, true, new String[]{"This block is made from the finest of jess hairs."});
+		pureJessBlockItem = new CustomColorableBlockItem(ChatColor.DARK_PURPLE + "Pure Jess Block", Material.HARD_CLAY, DyeColor.PURPLE, pureJessBlock, true, new String[]{"This block is made from the finest of jess hairs."});
 		
 		CustomBlocks.Register(pureJessBlock);
 		
