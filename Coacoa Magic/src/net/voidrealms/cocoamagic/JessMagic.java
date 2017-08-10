@@ -1,4 +1,4 @@
-package net.voidrealms.coacoamagic;
+package net.voidrealms.cocoamagic;
 
 public class JessMagic
 {

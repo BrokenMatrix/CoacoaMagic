@@ -1,4 +1,4 @@
-package net.voidrealms.coacoamagic.items.drops;
+package net.voidrealms.cocoamagic.items.drops;
 
 import org.bukkit.inventory.ItemStack;
 
@@ -19,6 +19,8 @@ public class CustomItemChanceDrop implements ICustomDrop
 	@Override
 	public ItemStack getItemStack()
 	{
+		System.out.println("DROPPING ITEM");
+		
 		if (Helper.NextFloat() > chance)
 		{
 			return item.getItemStack(1);

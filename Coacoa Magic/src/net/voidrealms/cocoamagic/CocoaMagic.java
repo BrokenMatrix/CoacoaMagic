@@ -1,11 +1,11 @@
-package net.voidrealms.coacoamagic;
+package net.voidrealms.cocoamagic;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.brokenmatrix.modcore.ModCore;
 
-public class CoacoaMagic extends JavaPlugin
+public class CocoaMagic extends JavaPlugin
 {
 	private JessMagic jessMagic;
 	private ThomasMagic thomasMagic;
