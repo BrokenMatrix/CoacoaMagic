@@ -14,6 +14,8 @@ import com.brokenmatrix.modcore.items.CustomItem;
 import com.brokenmatrix.modcore.items.CustomItems;
 import com.brokenmatrix.modcore.items.drops.CustomDrops;
 import com.brokenmatrix.multiblockcore.MBCBlock;
+import com.brokenmatrix.multiblockcore.MBCColorableBlock;
+import com.brokenmatrix.multiblockcore.MultiblockConfigurations;
 
 import net.voidrealms.cocoamagic.blocks.multiblocks.ManaFocusMultiblock;
 import net.voidrealms.cocoamagic.items.drops.CustomItemChanceDrop;
@@ -100,16 +102,20 @@ public class ThomasMagic
 		CustomDrops.Register(EntityType.ZOMBIE, new CustomItemChanceDrop(vexedOrb, 0.1f));
 		
 		//Multiblocks
-		MBCBlock stoneBricks = new MBCBlock(Material.BRICK);
-		MBCBlock water = new MBCBlock(Material.WATER);
+		MBCColorableBlock stoneBricks = new MBCColorableBlock(Material.SMOOTH_BRICK, (byte) 1);
+		MBCBlock water = new MBCBlock(Material.STATIONARY_WATER);
 		
 		//Mana Focuses
-		natureManaFocus = new ManaFocusMultiblock("Nature Mana Focus", Material.IRON_BARDING)
+		natureManaFocus = new ManaFocusMultiblock("Nature Mana Focus", Material.IRON_FENCE)
 				.addComponent("0 -1 0", stoneBricks)
 				.addComponent("0 -1 1", water)
 				.addComponent("0 -1 2", stoneBricks)
 				.addComponent("1 -1 1", stoneBricks)
-				.addComponent("-1 -1 1", stoneBricks);
+				.addComponent("-1 -1 1", stoneBricks)
+				.finish();
+		
+		//Multiblock Register
+		MultiblockConfigurations.Register(natureManaFocus);
 	}
 	
 	public ItemStack getOrb(Biome biome)
