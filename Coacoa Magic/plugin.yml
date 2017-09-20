@@ -1,7 +1,7 @@
 main: net.voidrealms.cocoamagic.CocoaMagic
 name: CocoaMagic
 version: 0.0.16
-authors: [zantanj, VoidAngel]
+authors: [zantanj]
 description: Acts like a big magic mod like ars magica or thaumcraft, but in a Spigot plugin instead of MCP or Forge. Using with slimefun adds a few new things but is not required.
 
 depend: [ModCore, MultiblockCore]
@@ -15,7 +15,7 @@ commands:
 permissions:
   coacoamagic.cheat.knowledge:
     description: Allows you to do /cm knowledge <give,take> <item,all>
-    defualt: op
+    default: op
   coacoamagic.cheat.mana:
     description: Allows you to do /cm mana <set,give,take> <mana>
-    defualt: op
+    default: op

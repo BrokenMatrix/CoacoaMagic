@@ -25,8 +25,6 @@ public class ThomasMagic
 	public static ThomasMagic Instance;
 	
 	//Blocks
-	
-	//Testing
 	public CustomColorableBlock pureJessBlock;
 	
 	//Items
@@ -44,7 +42,7 @@ public class ThomasMagic
 	public CustomColorableItem crushedOrb;
 	public CustomColorableItem vexedOrb;
 	
-	//Testing
+	//Blocks
 	public CustomColorableBlockItem pureJessBlockItem;
 	
 	//Multiblocks
@@ -77,7 +75,7 @@ public class ThomasMagic
 		vexedOrb = new CustomColorableItem(ChatColor.DARK_RED + "Vexed Orb", Material.INK_SACK, (byte) 1, 16, ChatColor.WHITE + "Essence of anger");
 		
 		//Testing
-		pureJessBlockItem = new CustomColorableBlockItem(ChatColor.DARK_PURPLE + "Pure Jess Block", Material.CONCRETE, (byte) 10, pureJessBlock, true, new String[]{"This block is made from the finest of jess hairs."});
+		pureJessBlockItem = new CustomColorableBlockItem(ChatColor.DARK_PURPLE + "Pure Jess Block", Material.CONCRETE, (byte) 10, pureJessBlock, true, "This block is made from the finest of jess hairs.");
 		
 		//Registry
 		
@@ -356,11 +354,11 @@ public class ThomasMagic
 			//Ender
 			case SKY:
 				orb = enderOrb;
-				amount = 1;
+				amount = 2;
 				break;
 			case VOID:
 				orb = enderOrb;
-				amount = 2;
+				amount = 1;
 				break;
 			//Swamp
 			case SWAMPLAND:
